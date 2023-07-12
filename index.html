@@ -18,31 +18,45 @@
                                 <img class="beeImg" src='/static/B.webp' height="40px">
                             </a>-->
                             <form class="d-flex" role="search">
-                                <input id="search" class="search" placeholder="buscar..." />
+                                <input id="search" class="search" placeholder="filtrar..." />&nbsp;&nbsp;
                                 <!--<button class="sort btn btn-success" data-sort="name">
                                     Ordenar por nome
                                 </button>-->
-                                <div>
+                                <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                                    <option value="" onclick="speakerList.search('')">Nenhum tópico</option>
                                      
                                     
-                                            <span alt='pessoas social outras mulheres organizacoes diversidade sociais sustentabilidade fundadora empresas ' class='badge rounded-pill badge0' onclick="speakerList.search('pessoas social outras mulheres organizacoes diversidade sociais sustentabilidade fundadora empresas ')">0</span>&nbsp;
-                                            <span alt='america diretor latina grupo criativa criatividade palestrante brasileira fundador paises ' class='badge rounded-pill badge1' onclick="speakerList.search('america diretor latina grupo criativa criatividade palestrante brasileira fundador paises ')">1</span>&nbsp;
-                                            <span alt='conteudo games mercado clientes entretenimento projetos digital mundo direito jogos ' class='badge rounded-pill badge2' onclick="speakerList.search('conteudo games mercado clientes entretenimento projetos digital mundo direito jogos ')">2</span>&nbsp;
-                                            <span alt='sempre mundo forma vida paixao resultados tempo negocio proposito objetivo ' class='badge rounded-pill badge3' onclick="speakerList.search('sempre mundo forma vida paixao resultados tempo negocio proposito objetivo ')">3</span>&nbsp;
-                                            <span alt='marketing comunicacao marcas mercado agencias digital carreira estrategia marca head ' class='badge rounded-pill badge4' onclick="speakerList.search('marketing comunicacao marcas mercado agencias digital carreira estrategia marca head ')">4</span>&nbsp;
-                                            <span alt='inovacao startups empresas ecossistema negocios empreendedor especialista empreendedorismo gestao aberta ' class='badge rounded-pill badge5' onclick="speakerList.search('inovacao startups empresas ecossistema negocios empreendedor especialista empreendedorismo gestao aberta ')">5</span>&nbsp;
-                                            <span alt='gestao tecnologia mba projetos desenvolvimento experiencia engenharia empresas executivo professor ' class='badge rounded-pill badge6' onclick="speakerList.search('gestao tecnologia mba projetos desenvolvimento experiencia engenharia empresas executivo professor ')">6</span>&nbsp;
-                                            <span alt='musica festival eventos musical artistas music cultural mundo festivais primeiro ' class='badge rounded-pill badge7' onclick="speakerList.search('musica festival eventos musical artistas music cultural mundo festivais primeiro ')">7</span>&nbsp;
+                                        <option value="pessoas social outras mulheres organizacoes diversidade sociais sustentabilidade fundadora empresas " onclick="speakerList.search('pessoas social outras mulheres organizacoes diversidade sociais sustentabilidade fundadora empresas ')">pessoas social outras mulheres organizacoes diversidade sociais sustentabilidade fundadora empresas </option>
                                              
-                                        
-                                            <span alt='design inovacao experiencia digital pessoas tecnologia negocios produtos digitais solucoes ' class='badge rounded-pill badge8' onclick="speakerList.search('design inovacao experiencia digital pessoas tecnologia negocios produtos digitais solucoes ')">8</span>&nbsp;
+                                    
+                                        <option value="america diretor latina grupo criativa criatividade palestrante brasileira fundador paises " onclick="speakerList.search('america diretor latina grupo criativa criatividade palestrante brasileira fundador paises ')">america diretor latina grupo criativa criatividade palestrante brasileira fundador paises </option>
                                              
-                                        
-                                            <span alt='educacao universidade formada saude pesquisa areas professora consultora university internacionais ' class='badge rounded-pill badge9' onclick="speakerList.search('educacao universidade formada saude pesquisa areas professora consultora university internacionais ')">9</span>&nbsp;
+                                    
+                                        <option value="conteudo games mercado clientes entretenimento projetos digital mundo direito jogos " onclick="speakerList.search('conteudo games mercado clientes entretenimento projetos digital mundo direito jogos ')">conteudo games mercado clientes entretenimento projetos digital mundo direito jogos </option>
                                              
-                                        
-                                        <span class='badge rounded-pill btn-info' onclick="speakerList.search('')">Limpar</span>&nbsp;
-                                </div>
+                                    
+                                        <option value="sempre mundo forma vida paixao resultados tempo negocio proposito objetivo " onclick="speakerList.search('sempre mundo forma vida paixao resultados tempo negocio proposito objetivo ')">sempre mundo forma vida paixao resultados tempo negocio proposito objetivo </option>
+                                             
+                                    
+                                        <option value="marketing comunicacao marcas mercado agencias digital carreira estrategia marca head " onclick="speakerList.search('marketing comunicacao marcas mercado agencias digital carreira estrategia marca head ')">marketing comunicacao marcas mercado agencias digital carreira estrategia marca head </option>
+                                             
+                                    
+                                        <option value="inovacao startups empresas ecossistema negocios empreendedor especialista empreendedorismo gestao aberta " onclick="speakerList.search('inovacao startups empresas ecossistema negocios empreendedor especialista empreendedorismo gestao aberta ')">inovacao startups empresas ecossistema negocios empreendedor especialista empreendedorismo gestao aberta </option>
+                                             
+                                    
+                                        <option value="gestao tecnologia mba projetos desenvolvimento experiencia engenharia empresas executivo professor " onclick="speakerList.search('gestao tecnologia mba projetos desenvolvimento experiencia engenharia empresas executivo professor ')">gestao tecnologia mba projetos desenvolvimento experiencia engenharia empresas executivo professor </option>
+                                             
+                                    
+                                        <option value="musica festival eventos musical artistas music cultural mundo festivais primeiro " onclick="speakerList.search('musica festival eventos musical artistas music cultural mundo festivais primeiro ')">musica festival eventos musical artistas music cultural mundo festivais primeiro </option>
+                                             
+                                    
+                                        <option value="design inovacao experiencia digital pessoas tecnologia negocios produtos digitais solucoes " onclick="speakerList.search('design inovacao experiencia digital pessoas tecnologia negocios produtos digitais solucoes ')">design inovacao experiencia digital pessoas tecnologia negocios produtos digitais solucoes </option>
+                                             
+                                    
+                                        <option value="educacao universidade formada saude pesquisa areas professora consultora university internacionais " onclick="speakerList.search('educacao universidade formada saude pesquisa areas professora consultora university internacionais ')">educacao universidade formada saude pesquisa areas professora consultora university internacionais </option>
+                                             
+                                    
+                                </select>
                             </form>
                     </nav>
                     <table class="table table-striped table-hover">
