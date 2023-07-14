@@ -22,38 +22,38 @@
                                 <!--<button class="sort btn btn-success" data-sort="name">
                                     Ordenar por nome
                                 </button>-->
-                                <select class="form-select form-select-sm" aria-label=".form-select-sm example">
-                                    <option value="" onchange="speakerList.search('')">Nenhum tópico</option>
+                                <select class="form-select form-select-sm" aria-label=".form-select-sm example" id="searchbox" onchange="searchByTopic()">
+                                    <option value="">Nenhum tópico</option>
                                      
                                     
-                                        <option value="pessoas social outras mulheres organizacoes diversidade sociais sustentabilidade fundadora empresas" onchange="speakerList.search('pessoas social outras mulheres organizacoes diversidade sociais sustentabilidade fundadora empresas ')">pessoas social outras mulheres organizacoes diversidade sociais sustentabilidade fundadora empresas </option>
+                                        <option value="pessoas social outras mulheres organizacoes diversidade sociais sustentabilidade fundadora empresas ">pessoas social outras mulheres organizacoes diversidade sociais sustentabilidade fundadora empresas </option>
                                              
                                     
-                                        <option value="america diretor latina grupo criativa criatividade palestrante brasileira fundador paises" onchange="speakerList.search('america diretor latina grupo criativa criatividade palestrante brasileira fundador paises ')">america diretor latina grupo criativa criatividade palestrante brasileira fundador paises </option>
+                                        <option value="america diretor latina grupo criativa criatividade palestrante brasileira fundador paises ">america diretor latina grupo criativa criatividade palestrante brasileira fundador paises </option>
                                              
                                     
-                                        <option value="conteudo games mercado clientes entretenimento projetos digital mundo direito jogos" onchange="speakerList.search('conteudo games mercado clientes entretenimento projetos digital mundo direito jogos ')">conteudo games mercado clientes entretenimento projetos digital mundo direito jogos </option>
+                                        <option value="conteudo games mercado clientes entretenimento projetos digital mundo direito jogos ">conteudo games mercado clientes entretenimento projetos digital mundo direito jogos </option>
                                              
                                     
-                                        <option value="sempre mundo forma vida paixao resultados tempo negocio proposito objetivo" onchange="speakerList.search('sempre mundo forma vida paixao resultados tempo negocio proposito objetivo ')">sempre mundo forma vida paixao resultados tempo negocio proposito objetivo </option>
+                                        <option value="sempre mundo forma vida paixao resultados tempo negocio proposito objetivo ">sempre mundo forma vida paixao resultados tempo negocio proposito objetivo </option>
                                              
                                     
-                                        <option value="marketing comunicacao marcas mercado agencias digital carreira estrategia marca head" onchange="speakerList.search('marketing comunicacao marcas mercado agencias digital carreira estrategia marca head ')">marketing comunicacao marcas mercado agencias digital carreira estrategia marca head </option>
+                                        <option value="marketing comunicacao marcas mercado agencias digital carreira estrategia marca head ">marketing comunicacao marcas mercado agencias digital carreira estrategia marca head </option>
                                              
                                     
-                                        <option value="inovacao startups empresas ecossistema negocios empreendedor especialista empreendedorismo gestao aberta" onchange="speakerList.search('inovacao startups empresas ecossistema negocios empreendedor especialista empreendedorismo gestao aberta ')">inovacao startups empresas ecossistema negocios empreendedor especialista empreendedorismo gestao aberta </option>
+                                        <option value="inovacao startups empresas ecossistema negocios empreendedor especialista empreendedorismo gestao aberta ">inovacao startups empresas ecossistema negocios empreendedor especialista empreendedorismo gestao aberta </option>
                                              
                                     
-                                        <option value="gestao tecnologia mba projetos desenvolvimento experiencia engenharia empresas executivo professor" onchange="speakerList.search('gestao tecnologia mba projetos desenvolvimento experiencia engenharia empresas executivo professor ')">gestao tecnologia mba projetos desenvolvimento experiencia engenharia empresas executivo professor </option>
+                                        <option value="gestao tecnologia mba projetos desenvolvimento experiencia engenharia empresas executivo professor ">gestao tecnologia mba projetos desenvolvimento experiencia engenharia empresas executivo professor </option>
                                              
                                     
-                                        <option value="musica festival eventos musical artistas music cultural mundo festivais primeiro" onclick="speakerList.search('musica festival eventos musical artistas music cultural mundo festivais primeiro ')">musica festival eventos musical artistas music cultural mundo festivais primeiro </option>
+                                        <option value="musica festival eventos musical artistas music cultural mundo festivais primeiro ">musica festival eventos musical artistas music cultural mundo festivais primeiro </option>
                                              
                                     
-                                        <option value="design inovacao experiencia digital pessoas tecnologia negocios produtos digitais solucoes" onchange="speakerList.search('design inovacao experiencia digital pessoas tecnologia negocios produtos digitais solucoes ')">design inovacao experiencia digital pessoas tecnologia negocios produtos digitais solucoes </option>
+                                        <option value="design inovacao experiencia digital pessoas tecnologia negocios produtos digitais solucoes ">design inovacao experiencia digital pessoas tecnologia negocios produtos digitais solucoes </option>
                                              
                                     
-                                        <option value="educacao universidade formada saude pesquisa areas professora consultora university internacionais" onchange="speakerList.search('educacao universidade formada saude pesquisa areas professora consultora university internacionais ')">educacao universidade formada saude pesquisa areas professora consultora university internacionais </option>
+                                        <option value="educacao universidade formada saude pesquisa areas professora consultora university internacionais ">educacao universidade formada saude pesquisa areas professora consultora university internacionais </option>
                                              
                                     
                                 </select>
@@ -7524,6 +7524,11 @@ Bruno passou por agências incríveis como <span class="orangeMark">W+K</span>, 
             });
         }
       </script>    
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+      <script>
+        function searchByTopic() {
+            speakerList.search($("#searchbox").val());
+        }
+      </script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script:>
     </body>
 </html>
